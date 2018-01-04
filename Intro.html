@@ -1,0 +1,43 @@
+<html>
+<head>
+</head>
+
+
+<script>
+
+var my_obj = {
+"foo": "value",
+"age": 30,
+"address": {
+"street": "abc",
+"city": "test"
+}
+};
+console.log(my_obj)
+
+
+var emp1 = {}
+emp1.first_name = "michal";
+emp1.last_name = "matt";
+emp1.age = 30;
+emp1.designation = "dev";
+
+
+function createEmployeeObject(first_name, last_name, age, designation){
+	var newObject = {};
+	newObject.first_name = first_name;
+	newObject.last_name = last_name;
+	newObject.age = age;
+	newObject.designation = designation;
+	return newObject;
+}
+
+
+var emp3 = createEmployeeObject("a", "b", 28, "desinger")
+console.log(emp3)
+
+
+</script>
+
+
+</html>
