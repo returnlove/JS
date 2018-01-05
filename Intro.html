@@ -15,7 +15,7 @@ var my_obj = {
 "city": "test"
 }
 };
-console.log(my_obj)
+//console.log(my_obj)
 
 
 var emp1 = {}
@@ -23,6 +23,7 @@ emp1.first_name = "michal";
 emp1.last_name = "matt";
 emp1.age = 30;
 emp1.designation = "dev";
+
 
 
 function createEmployeeObject(first_name, last_name, age, designation){
@@ -37,6 +38,21 @@ function createEmployeeObject(first_name, last_name, age, designation){
 
 var emp3 = createEmployeeObject("a", "b", 28, "desinger")
 console.log(emp3)
+
+
+function createEmployeeObject1(first_name, last_name, age, designation){
+	this.first_name = first_name;
+	this.last_name = last_name;
+	this.age = age;
+	this.designation = designation;
+}
+
+
+var emp4 = new createEmployeeObject1("a", "b", 28, "desinger")
+console.log(emp4)
+
+
+
 
 
 </script>
