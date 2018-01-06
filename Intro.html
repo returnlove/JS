@@ -55,6 +55,39 @@ console.log(emp4)
 // test
 
 
+var place = {
+
+	"name": "India",
+	"distance": 100,
+	"population": 2.3
+};
+
+function createPlace(name, distance, population){
+	var newPlace ={};
+	newPlace.name = name;
+	newPlace.distance = distance;
+	newPlace.population = population;
+	return newPlace;
+}
+
+place = createPlace("aus", 1,1,);
+console.log(place)
+
+function createPlaceConst(name, distance, population){
+	this.name = name;
+	this.distance = distance;
+	this.population = population;
+}
+
+place1 = new createPlaceConst("us",1,1)
+console.log(place1)
+
+
+// there is no special way of defining a constructor function
+// it depends on the way you can call the function. ex: new createObject() - new keyword 
+// create a function with First Letter as capital. ex: CreatePlace() 
+
+
 </script>
 
 
