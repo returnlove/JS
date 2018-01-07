@@ -87,6 +87,29 @@ console.log(place1)
 // it depends on the way you can call the function. ex: new createObject() - new keyword 
 // create a function with First Letter as capital. ex: CreatePlace() 
 
+function foo(){
+
+console.log("foo")
+console.log("this when calling function directly: ")
+console.log(this)
+}
+
+foo() // calling a function
+
+var obj = {};
+
+obj.food = function (){
+	console.log("foo")
+	console.log("this when calling function using object: ")
+	console.log(this)
+
+} 
+
+obj.food();
+
+new foo(); // using constructor
+
+
 
 </script>
 
