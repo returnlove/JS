@@ -109,6 +109,26 @@ obj.food();
 
 new foo(); // using constructor
 
+function CreateVehicle(brand, model, color, price, offer)
+{
+
+	this.brand = brand;
+	this.model = model;
+	this.color = color;
+	this.price = price;
+	this.offer = function (){
+		this.price = this.price - 1000;
+	}
+}
+
+var vehicle1 = new CreateVehicle("Honda", "some model", "white", 20000, 1000)
+console.log(vehicle1);
+vehicle1.offer();
+
+
+//https://www.youtube.com/watch?v=vvV-GZ6AMMY&list=PLqq-6Pq4lTTaflXUL0v3TSm86nodn0c_u&index=10
+
+
 
 
 </script>
