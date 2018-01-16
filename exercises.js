@@ -71,3 +71,30 @@ for(var i= 0; i < library.length; i++)
 	console.log(library[i]["readingStatus"]);
 	console.log("####");
 }
+
+//Write a JavaScript function to print all the methods in an JavaScript object.
+
+
+var test_obj = {
+	test_prop: "hello",
+	get_time: function() {
+		
+		console.log("hello from get time")
+	}
+	
+}
+
+for (var key in test_obj){
+	//console.log(typeof(test_obj[key]));
+	
+	var type_ = typeof(test_obj[key]);
+	if(type_ == "function")
+	{
+		console.log(key);
+	}
+}
+
+// to-do
+// Write a JavaScript function to parse an URL. 
+
+//https://www.w3resource.com/javascript-exercises/javascript-object-exercise-12.php
