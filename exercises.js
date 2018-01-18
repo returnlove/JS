@@ -98,3 +98,32 @@ for (var key in test_obj){
 // Write a JavaScript function to parse an URL. 
 
 //https://www.w3resource.com/javascript-exercises/javascript-object-exercise-12.php
+
+//Write a JavaScript function to check if an object contains given property.
+
+
+var prop_to_check = "test_prop"
+
+var test_obj = {
+	test_prop: "hello",
+	get_time: function() {
+		
+		console.log("hello from get time")
+	}
+	
+}
+
+for(var key in test_obj)
+{
+
+	if(prop_to_check == key)
+	{
+		console.log("found");
+		break;
+	}
+	else
+	{
+		console.log("not found");
+	}
+}
+
