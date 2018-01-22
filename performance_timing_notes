@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=CHCN2BjnjXU
+
+Method 1: JS timer
+(Current time - End time)
+
+Method2: Navigation timing API
+
+var perfObj = window.performance.timing
+var pageLoad = perfObj["loadEventEnd"] - perfObj["navigationStart"]
+
