@@ -8,3 +8,4 @@ Method2: Navigation timing API
 var perfObj = window.performance.timing
 var pageLoad = perfObj["loadEventEnd"] - perfObj["navigationStart"]
 
+Learnt some more about local storages and trying to read performance object resources.
