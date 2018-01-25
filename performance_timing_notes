@@ -9,4 +9,4 @@ var perfObj = window.performance.timing
 var pageLoad = perfObj["loadEventEnd"] - perfObj["navigationStart"]
 
 Learnt some more about local storages and trying to read performance object resources.
- Do Double tomorrow
+ Do Double tomorrow #cheat
